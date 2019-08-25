@@ -1,3 +1,16 @@
+/*General Settings*/
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -127,6 +140,81 @@ sidebar-active {
     color:  #6b7072;
     padding-right: 15px;
 }
+
+/*Page Contact*/
+
+#content {
+    width: 100%;
+}
+
+.btn-info{
+    border-radius: 0;
+    background-color: #1ab5b3;
+    position: fixed;
+    z-index: 5;
+    opacity: .7;
+}
+
+.container-fluid { 
+    padding: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #2db8b7;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.overlay-container:hover .overlay {
+    opacity: .8;
+}
+
+.text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    
+   }
+
+   .overlay-border {
+       width: 50%;
+       border: 1px solid #fff;
+       margin: 0 auto;
+       opacity: .7;
+       margin-bottom: 18px;
+    }
+    
+    .project-title {
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .project-area {
+        font-size: 11px;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+
 
 
     
